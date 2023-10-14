@@ -1,11 +1,10 @@
-.encabezado{/*acomodando el header para todas las paginas*/
+.encabezado {/*acomodando el header para todas las paginas*/
     display: flex;
     justify-content: space-between;
     height: 120px;
     background-color:rgba(0, 0, 0, 0.9);
     position: sticky;
     top: 0;
-            
             .linknav{ /*se acomoda navegacion y se le da propiedades*/
 
                     color:white;
@@ -21,10 +20,14 @@
     color: #1561f0;    
 }
 
+
 @media (max-width: 767px) {
     .encabezado {
         display: grid;
         flex-direction: column;
         height: auto;
         justify-content: center;
-     }}
+     }
+     .my-navbar {
+        height: 50px;
+    }}
