@@ -1,0 +1,30 @@
+.encabezado{/*acomodando el header para todas las paginas*/
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    background-color:rgba(0, 0, 0, 0.9);
+    position: sticky;
+    top: 0;
+            
+            .linknav{ /*se acomoda navegacion y se le da propiedades*/
+
+                    color:white;
+                    justify-content: space-between;
+                    font-family: 'Alef', sans-serif;
+                    font-size: 1.5rem;
+                    }
+    .boton{
+        background-color: #1561f0;
+   }
+}
+.linknav:hover{
+    color: #1561f0;    
+}
+
+@media (max-width: 767px) {
+    .encabezado {
+        display: grid;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+     }}

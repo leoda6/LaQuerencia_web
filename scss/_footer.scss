@@ -1,0 +1,42 @@
+.footer{/*se estila el footer para todas las paginas*/
+    background-color:rgba(0, 0, 0, 0.9);  
+    
+}
+  
+.wapp{ /*icono de whastap  movible*/ 
+    font-size: 3rem;
+     color:#013cbb;
+     &:hover{
+        color: #1561f0;} 
+    }
+    @media (max-width: 767px){
+        .footer{/*se estila el footer para todas las paginas*/
+     
+            height: auto;
+                    .pfooter{
+                        font-size: 1rem;
+                    }   
+                    .pfooter{
+                        margin-right: 50px;
+                    }
+         
+        }
+        .footer a { 
+            font-size: 16px;
+            padding:20px;
+            
+            }
+            .diviconos{
+                    .iconos{
+                                font-size: 2rem;
+                              
+                            }
+            
+        }
+        .wapp{ /*icono de whastap  movible*/ 
+            font-size: 2rem;
+            bottom: 97px;
+            right: 35px;
+            }
+        
+    }

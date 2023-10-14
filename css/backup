@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Domine:wght@400;500;600;700&family=Yantramanav:wght@100;500;900&display=swap');
 *{/*se resetea los valores*/
     margin: 0;

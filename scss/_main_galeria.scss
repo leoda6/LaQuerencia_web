@@ -1,0 +1,54 @@
+ /********************************Aqui comienza la pagina galeria**********************************/
+ .maingaleria{
+    background-color: #14213d;
+   }
+    .carrusel{
+      height: 500px;
+      width: 100%;
+      object-fit: cover;
+    }
+    #galeria img{
+        width: 100%;
+        height: 300px;
+        border-radius: 5%;
+        box-shadow:5px 5px 10px #2b2b2b;
+    }
+    #galeria .col-lg-4{
+        padding: 25px;
+    
+    }
+    #galeria img:hover{
+        border: 5px solid #fca311;
+    }
+.secgaleria{
+    width: 100%;
+    background-color: #14213d;
+    border-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.bodygaleria{
+    background-color: #14213d;
+}
+.titulosgaleria{
+    font-family:$font-titulo;
+    font-size: 75px;
+    text-align: center;
+    color: $color-titulo;
+}
+.parrafogaleria{
+    font-family: 'Yantramanav', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+/*******************************Aqui comienza pagina de contacto**********************************/
+.maincontacto{
+    background-color:rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width:767){
+    .versionmobile{
+        display : none !important;
+
+    }
+}

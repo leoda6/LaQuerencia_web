@@ -1,0 +1,26 @@
+/******************************************Aqui comienza pagina de picadas********************************/
+.tituloprincipal{/*estilos al titulo*/
+    font-family:$font-titulo;
+    font-size: 100px;
+    text-align: center;
+    color: $color-titulo;
+ }
+ .pixelate {
+    opacity: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.pixelate:hover {
+    transform: scale(1.2); 
+    opacity: 0.7; 
+}
+.mainpicada{
+background-color: #14213d;
+}
+.parrafo{ /*estilos al parrafo del titulo principal*/
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 1.5rem ;
+    text-align: 4right; /*no pude centrar el parrafo como queria*/
+    color: white;
+    line-height: 2 ;
+}

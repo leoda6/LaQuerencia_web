@@ -1,0 +1,13 @@
+*{/*se resetea los valores*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grilla{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr auto 0.2fr;
+    grid-area: "header"
+                "main"
+                "footer";
+    }
