@@ -17,7 +17,7 @@
   display: flex;
   justify-content: space-between;
   height: 120px;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-image: linear-gradient(to bottom, #000000, #13080f, #1b111c, #1c182b, #14213b);;
   position: sticky;
   top: 0;
 }
@@ -109,6 +109,31 @@
 
 .container .fotos:hover {
   transform: scale(1.1);
+}
+.sec2{
+  background-color: #021b41;
+}
+.divinicio{
+  background-image: url(../asset/Imagenes/fondeu.jpeg);
+  height: 700px;
+   background-size: auto;
+  background-position: center;
+  width: 74%;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-end; 
+  align-items: flex-start;
+  
+  .pdiv{
+    font-family: "Alef", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+  }
+  .aindex{
+    color: #013cbb;
+    font-family: "Alef", sans-serif;
+    font-size: 1.5rem;
+  }
 }
 
 /************************************responsive del index*****************************************/
@@ -272,17 +297,40 @@
 }
 
 .footer { /*se estila el footer para todas las paginas*/
-  background-color: rgba(0, 0, 0, 0.9);
+  background-image: linear-gradient(to top, #040f27, #031634, #021b41, #031f4f, #07245d);
 }
 
 .wapp { /*icono de whastap  movible*/
   font-size: 3rem;
   color: #013cbb;
+  animation-name: movimiento;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
 }
 .wapp:hover {
   color: #1561f0;
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
 }
-
+.ani2{
+  animation-delay: 0.5s;
+}
+.ani3{
+  animation-delay: 1s;
+}
+@keyframes movimiento {
+  0%{
+    transform: translatey(0);
+  }
+  50%{
+    transform: translateY(-40px);
+    }
+  100%{
+    transform: translatey(0);
+  }
+  
+}
 @media (max-width: 767px) {
   .footer { /*se estila el footer para todas las paginas*/
     height: auto;
@@ -307,4 +355,3 @@
   }
 }
 
-/*# sourceMappingURL=index.css.map */

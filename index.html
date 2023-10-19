@@ -7,10 +7,11 @@
         <link rel="shortcoun icon" href="/asset/Imagenes/logo fondo transparente-1.png">
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <script src="https://kit.fontawesome.com/7890a9bed7.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head> 
     <body class="principal">
-        <header class="header encabezado">
+        <header class="header encabezado" data-aos="fade-up" data-aos-delay="100">
             
             <img class="imglogo" src="./asset/Imagenes/logo fondo transparente-2.png" alt="LaQuerencia" loading="lazy" style="cursor: pointer" onclick="window.location.href='/index.html'">
           
@@ -25,25 +26,25 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link active linknav" aria-current="page" href="/pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link active linknav" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link linknav" href="/pages/picadas.html">Picadas</a>
+                        <a class="nav-link linknav" href="./pages/picadas.html">Picadas</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link linknav" href="/pages/galeria.html">Galeria</a>
+                        <a class="nav-link linknav" href="./pages/galeria.html">Galeria</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link linknav" href="/pages/contacto.html">Contacto</a>
+                        <a class="nav-link linknav" href="./pages/contacto.html">Contacto</a>
                       </li>
                     </ul>
                   </div>
                 </div>
               </nav>
         </header>
-        <main class="main"> <!--contenido principal-->
+        <main class="main" data-aos="fade-right" data-aos-delay="100" data-aos-offset="200"> <!--contenido principal-->
             
-            <section class="div1">
+            <section class="div1" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200">
                 <div class="tituloP">
                     <h1 class="tituloprincipal">Fiambreria Gourmet</h1>
                 </div>
@@ -55,32 +56,37 @@
                     </p>
                 </div>
             </section>
-                <section class="container w-100">
+                <section class="container w-100" data-aos="fade-up" data-aos-delay="100">
                     <img class="fotos" src="/asset/Imagenes/WhatsApp Image 2023-09-09 at 17.44.21.jpeg" alt="">
                     <img class="fotos" src="/asset/Imagenes/WhatsApp Image 2023-09-09 at 17.51.43 (1).jpeg" alt="">
                     <img class="fotos" src="/asset/Imagenes/WhatsApp Image 2023-09-09 at 17.51.44 (1).jpeg" alt="">
                     <img class="fotos" src="/asset/Imagenes/WhatsApp Image 2023-09-09 at 17.51.43.jpeg" alt="">
                 </section>
-            
+                 <section class="container-fluid sec2" data-aos="fade-up" data-aos-delay="100">
+                        <div class="container divinicio">
+                            <p class="pdiv">Si desea contactarnos, haga clic <a class="aindex" href="./pages/contacto.html">Aqui</a></p>
+                        </div>
+                </section>
        
                     <div class="container">
                         <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3200.0165265619135!2d-64.38032712429757!3d-36.67410367228328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95dd33be9580f873%3A0xd6f7246167008857!2sLa%20Querencia%20Almacen%20de%20Fiambres!5e0!3m2!1ses-419!2sar!4v1696365986952!5m2!1ses-419!2sar" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
+                   
         </main>
        
-        <footer class="text-white pt-5 pb-4 footer">
+        <footer class="text-white pt-5 pb-4 footer" data-aos="fade-up" data-aos-delay="100">
             <div class="container text-center">
                 <div class="row text-center">
                       <div class="text-center">
                             <ul class="list-unstyled list-inline">
                                 <li class="list-inline-item">
-                                    <a href="" class="text-dark"><i class="fab fa-facebook wapp"></i></a>
+                                    <a href="https://www.facebook.com/profile.php?id=100041897955922&locale=es_LA" class="text-dark"><i class="fab fa-facebook wapp ani1"></i></a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="" class="text-dark"><i class="wapp fab fa-instagram"></i></a>
+                                    <a href="https://www.instagram.com/laquerencia_almacen/" class="text-dark"><i class="wapp fab fa-instagram ani2"></i></a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="" class="text-dark"><i class="wapp fa fa-whatsapp"></i></a>
+                                    <a href="https://wa.me/message/U6TQFEF3GJ5MK1" class="text-dark"><i class="wapp fa fa-whatsapp ani3"></i></a>
                                 </li>
                                 </ul>
                         </div> 
@@ -104,5 +110,9 @@
     
         </footer>
         <script src="/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+            </script>
     </body>
 </html>

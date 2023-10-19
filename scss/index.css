@@ -16,7 +16,6 @@
 .encabezado { /*acomodando el header para todas las paginas*/
   display: flex;
   justify-content: space-between;
-  height: 120px;
   background-color: rgba(0, 0, 0, 0.9);
   position: sticky;
   top: 0;
@@ -160,8 +159,7 @@
 .carrusel {
   height: 500px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #galeria img {
@@ -305,4 +303,4 @@
     bottom: 97px;
     right: 35px;
   }
-}/*# sourceMappingURL=index.css.map */
+}
