@@ -177,10 +177,12 @@
   .mapa {
     height: 200px;
   }
+ 
 }
 /********************************Aqui comienza la pagina galeria**********************************/
 .maingaleria {
   background-color: #14213d;
+  overflow: hidden;
 }
 
 .carrusel {
@@ -352,6 +354,28 @@
     font-size: 2rem;
     bottom: 97px;
     right: 35px;
+    animation:  none;
+  }
+}
+/*********************************Aqui comienza pag 404*******************************/
+.img404{
+  height: 500px;
+  border-radius: 50%;
+  margin-left: 100px;
+}
+.error{
+  font-size: 4rem;
+  color: white;
+  font-family: "domine", sans-serif;
+  margin-top: 150px;
+}
+.fondo{
+  background-color: #021b41;
+}
+@media (max-width: 767px) {
+  .img404{
+    height: 300px;
+    margin-left: auto;
   }
 }
 
