@@ -182,7 +182,7 @@
 /********************************Aqui comienza la pagina galeria**********************************/
 .maingaleria {
   background-color: #14213d;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .carrusel {
