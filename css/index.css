@@ -20,6 +20,7 @@
   background-image: linear-gradient(to bottom, #000000, #13080f, #1b111c, #1c182b, #14213b);;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 .encabezado .linknav { /*se acomoda navegacion y se le da propiedades*/
   color: white;
@@ -236,6 +237,30 @@
 .maincontacto {
   background-color: rgba(0, 0, 0, 0.3);
 }
+.imgcontacto{
+  border-radius: 10%;
+}
+.boton1{
+  margin-top: 20px;
+  font-size: 25px;
+  background-color: #013cbb;
+  font-family:"Yantramanav", sans-serif;
+  border-radius: 10%;
+}
+.boton2{
+  margin-top: 20px;
+  font-size: 25px;
+  background-color: #013cbb;
+  font-family:"Yantramanav", sans-serif;
+  border-radius: 10%;
+  margin-left: 10px;
+}
+.boton1:hover{
+  background-color: red;
+}
+.boton2:hover{
+  background-color: rgb(7, 231, 7);
+}
 
 @media screen and (max-width: 767) {
   .versionmobile {
@@ -306,7 +331,7 @@
   font-size: 3rem;
   color: #013cbb;
   animation-name: movimiento;
-  animation-duration: 2s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
 }
