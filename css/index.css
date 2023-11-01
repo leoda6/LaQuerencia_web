@@ -131,7 +131,7 @@
     color: white;
   }
   .aindex{
-    color: #013cbb;
+    color: #fca311;
     font-family: "Alef", sans-serif;
     font-size: 1.5rem;
   }
@@ -231,6 +231,9 @@
   color: white;
   font-size: 1.5rem;
   margin-top: 50px;
+}
+.videogaleria{
+  
 }
 
 /*******************************Aqui comienza pagina de contacto**********************************/

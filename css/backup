@@ -1,300 +1,409 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Domine:wght@400;500;600;700&family=Yantramanav:wght@100;500;900&display=swap');
-*{/*se resetea los valores*/
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Domine:wght@400;500;600;700&family=Yantramanav:wght@100;500;900&display=swap");
+* { /*se resetea los valores*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.grilla{
+
+.grilla {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr auto 0.2fr;
+  grid-area: "header" "main" "footer";
+}
+
+.encabezado { /*acomodando el header para todas las paginas*/
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  background-image: linear-gradient(to bottom, #000000, #13080f, #1b111c, #1c182b, #14213b);;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.encabezado .linknav { /*se acomoda navegacion y se le da propiedades*/
+  color: white;
+  justify-content: space-between;
+  font-family: "Alef", sans-serif;
+  font-size: 1.5rem;
+}
+.encabezado .boton {
+  background-color: #1561f0;
+}
+
+.linknav:hover {
+  color: #1561f0;
+}
+
+@media (max-width: 767px) {
+  .encabezado {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr auto 0.2fr;
-    grid-area: "header"
-                "main"
-                "footer";
-    }
-.encabezado{/*acomodando el header para todas las paginas*/
-    display: flex;
-    justify-content: space-between;
-    height: 120px;
-    background-color:rgba(0, 0, 0, 0.9);
-    position: sticky;
-    top: 0;
-            
-            .linknav{ /*se acomoda navegacion y se le da propiedades*/
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+  }
+}
+.div1 { /*aqui se estila el titulo principal con su parrafo */
+  height: 1000px;
+  width: 100%;
+  border: 2px solid #ccc;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  text-align: center;
+  background-color: #14213d;
+}
+.div1 .imgfondo {
+  display: flex;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 700px;
+  border-radius: 15px;
+  background-position: left center;
+}
+.div1 .tituloprincipal { /*estilos al titulo*/
+  font-family: "domine", sans-serif;
+  font-size: 100px;
+  text-align: center;
+  color: #fca311;
+}
+.div1 .contenedorparrafo {
+  text-align: center;
+  justify-content: center;
+  text-align: right;
+}
+.div1 .parrafo { /*estilos al parrafo del titulo principal*/
+  font-family: "Yantramanav", sans-serif;
+  font-size: 1.5rem;
+  text-align: right; /*no pude centrar el parrafo como queria*/
+  color: white;
+  margin-top: -700px;
+  margin-left: 800px;
+  text-align: center;
+  line-height: 2;
+  overflow: auto;
+}
+.div1 .parrafo .destacado {
+  color: #1561f0;
+}
 
-                    color:white;
-                    justify-content: space-between;
-                    font-family: 'Alef', sans-serif;
-                    font-size: 1.5rem;
-                    }
-    .boton{
-        background-color: #1561f0;
-   }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  gap: 40px;
+  border-top: solid 2px #2b2b2b;
+  border-bottom: solid 2px #2b2b2b;
+  padding: 50px; /* Agregamos un espacio interior al contenedor */
 }
-.linknav:hover{
-    color: #1561f0;    
+.container .fotos {
+  height: 400px;
+  width: 500px;
+  border-radius: 10%;
+  transition: transform 0.3s;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.div1{ /*aqui se estila el titulo principal con su parrafo */
-   height: 1000px;
-    width: 100%;
-    border: 2px solid #ccc;
-    justify-content: center; 
-    align-items: center; 
-    margin-top: 100px;
-    text-align: center;
-    background-color:#14213d;
-    .imgfondo{
-                display: flex;
-                background-repeat: no-repeat;
-                height: 800px;
-                width: 700px;
-                border-radius: 15px;
-                background-position:left center;
-             }
-    .tituloprincipal{/*estilos al titulo*/
-                        font-family:'Domine',sans-serif;
-                        font-size: 100px;
-                        text-align: center;
-                        color: #fca311;
-                     }
-   .contenedorparrafo{
-       text-align: center;
-       justify-content: center;
-       text-align:right; 
-    }
-    .parrafo{ /*estilos al parrafo del titulo principal*/
-    font-family: 'Yantramanav', sans-serif;
-    font-size: 1.5rem ;
-    text-align: right; /*no pude centrar el parrafo como queria*/
-    color: white;
-    margin-top: -700px;
-    margin-left: 800px;
-    text-align: center;
-    line-height: 2;
-    overflow: auto;
-        .destacado{
-            color:#1561f0;
-            }
-}
- }
- 
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centra horizontalmente los elementos */
-    align-items: center; /* Centra verticalmente los elementos */
-    gap: 40px;
-    border-top: solid 2px #2b2b2b;
-    border-bottom: solid 2px #2b2b2b;
-    padding:50px; /* Agregamos un espacio interior al contenedor */
-    .fotos{
-        height: 400px;
-        width: 500px;
-        border-radius: 10%;
-        transition: transform 0.3s;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px;
-    }
-}
 .container .fotos:hover {
-    transform: scale(1.1); }
-.footer{/*se estila el footer para todas las paginas*/
-    background-color:rgba(0, 0, 0, 0.9);  
-    
+  transform: scale(1.1);
 }
+.sec2{
+  background-color: #021b41;
+}
+.divinicio{
+  background-image: url(../asset/Imagenes/fondeu.jpeg);
+  height: 700px;
+   background-size: auto;
+  background-position: center;
+  width: 74%;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-end; 
+  align-items: flex-start;
   
-.wapp{ /*icono de whastap  movible*/ 
-    font-size: 3rem;
-     color:#013cbb;
-    }
-.wapp:hover{
-    color:#1561f0;
+  .pdiv{
+    font-family: "Alef", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+  }
+  .aindex{
+    color: #fca311;
+    font-family: "Alef", sans-serif;
+    font-size: 1.5rem;
+  }
 }
+
 /************************************responsive del index*****************************************/
 /* Estilos para pantallas pequeñas (menor a 767px de ancho) */
 @media (max-width: 767px) {
-    .header{
-        display: grid;
-        grid-template-rows: repeat(1fr);
-        
-    }
-    /********************seccion1***************/
-
-    .encabezado {
-       display: grid;
-       flex-direction: column;
-       height: auto;
-       justify-content: center;
-    }
-    .imglogo {
-        height: 80px;
-        margin: auto;
-    }
-    .div1 {
+  /********************seccion1***************/
+  .header {
+    display: grid;
+    grid-template-rows: repeat(1fr);
+  }
+  .imglogo {
+    height: 80px;
+    margin: auto;
+  }
+  .div1 {
     margin-top: 1100px;
     background-color: #14213d;
     height: 100vh;
-    }
-    .tituloP{
-        background-color: #14213d;   
-     }
-    
-    .imgfondo {
-        max-width: 100%;
-        border-radius: 5%;
-        background-color: #14213d;
-    }
-    .tituloprincipal {
-        margin-top:-1000px;
-        font-size: 24px;
-    
-       
-    }
-    .contenedorparrafo{
-        margin-left: -800px;
-        margin-top: 720px;
-    }
-    .parrafo {
-        border:  solid 1px #2b2b2b;
-        font-size: 16px;
-       overflow: hidden;
-      
-    }
-.mapa{
+  }
+  .tituloP {
+    background-color: #14213d;
+  }
+  .imgfondo {
+    max-width: 100%;
+    border-radius: 5%;
+    background-color: #14213d;
+  }
+  .tituloprincipal {
+    margin-top: -1000px;
+    font-size: 24px;
+  }
+  .contenedorparrafo {
+    margin-left: -800px;
+    margin-top: 720px;
+  }
+  .parrafo {
+    border: solid 1px #2b2b2b;
+    font-size: 16px;
+    overflow: hidden;
+  }
+  .mapa {
     height: 200px;
-
-}
-.footer{/*se estila el footer para todas las paginas*/
-    
-    height: auto;
-            .pfooter{
-                font-size: 1rem;
-            }   
-            .pfooter{
-                margin-right: 50px;
-            }
+  }
  
 }
-.footer a { 
-    font-size: 16px;
-    padding:20px;
-    
-    }
-    .diviconos{
-            .iconos{
-                        font-size: 2rem;
-                      
-                    }
-    
+/********************************Aqui comienza la pagina galeria**********************************/
+.maingaleria {
+  background-color: #14213d;
+  overflow-x: hidden;
 }
-.wapp{ /*icono de whastap  movible*/ 
-    font-size: 2rem;
-    bottom: 97px;
-    right: 35px;
-    }
 
+.carrusel {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
 }
-    /********************************Aqui comienza la pagina galeria**********************************/
-   .maingaleria{
-    background-color: #14213d;
-   }
-    .carrusel{
-      height: 500px;
-      width: 100%;
-      object-fit: cover;
-    }
-    #galeria img{
-        width: 100%;
-        height: 300px;
-        border-radius: 5%;
-        box-shadow:5px 5px 10px #2b2b2b;
-    }
-    #galeria .col-lg-4{
-        padding: 25px;
-    
-    }
-    #galeria img:hover{
-        border: 5px solid #fca311;
-    }
-.secgaleria{
-    width: 100%;
-    background-color: #14213d;
-    border-color: white;
-    margin-top: 50px;
-    margin-bottom: 50px;
+
+#galeria img {
+  width: 100%;
+  height: 300px;
+  border-radius: 5%;
+  box-shadow: 5px 5px 10px #2b2b2b;
 }
-.bodygaleria{
-    background-color: #14213d;
+
+#galeria .col-lg-4 {
+  padding: 25px;
 }
-.titulosgaleria{
-    font-family:'Domine',sans-serif;
-    font-size: 75px;
-    text-align: center;
-    color: #fca311;
+
+#galeria img:hover {
+  border: 5px solid #fca311;
 }
-.parrafogaleria{
-    font-family: 'Yantramanav', sans-serif;
-    color: white;
-    font-size: 1.5rem;
-    margin-top: 50px;
+
+.secgaleria {
+  width: 100%;
+  background-color: #14213d;
+  border-color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
+
+.bodygaleria {
+  background-color: #14213d;
+}
+
+.titulosgaleria {
+  font-family: "domine", sans-serif;
+  font-size: 75px;
+  text-align: center;
+  color: #fca311;
+}
+
+.parrafogaleria {
+  font-family: "Yantramanav", sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 50px;
+}
+.videogaleria{
+  
+}
+
 /*******************************Aqui comienza pagina de contacto**********************************/
-.maincontacto{
-    background-color:rgba(0, 0, 0, 0.3);
+.maincontacto {
+  background-color: rgba(0, 0, 0, 0.3);
 }
-@media screen and (max-width:767){
-    .versionmobile{
-        display : none !important;
+.imgcontacto{
+  border-radius: 10%;
+}
+.boton1{
+  margin-top: 20px;
+  font-size: 25px;
+  background-color: #013cbb;
+  font-family:"Yantramanav", sans-serif;
+  border-radius: 10%;
+}
+.boton2{
+  margin-top: 20px;
+  font-size: 25px;
+  background-color: #013cbb;
+  font-family:"Yantramanav", sans-serif;
+  border-radius: 10%;
+  margin-left: 10px;
+}
+.boton1:hover{
+  background-color: red;
+}
+.boton2:hover{
+  background-color: rgb(7, 231, 7);
+}
 
-    }
+@media screen and (max-width: 767) {
+  .versionmobile {
+    display: none !important;
+  }
 }
 /******************************************Aqui comienza pagina de picadas********************************/
-.tituloprincipal{/*estilos al titulo*/
-    font-family:'Domine',sans-serif;
-    font-size: 100px;
-    text-align: center;
-    color: #fca311;
- }
- .pixelate {
-    opacity: 1;
-    transition: transform 0.3s ease, opacity 0.3s ease; 
+.tituloprincipal { /*estilos al titulo*/
+  font-family: "domine", sans-serif;
+  font-size: 100px;
+  text-align: center;
+  color: #fca311;
+}
+
+.pixelate {
+  opacity: 1;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .pixelate:hover {
-    transform: scale(1.2); 
-    opacity: 0.7; 
+  transform: scale(1.2);
+  opacity: 0.7;
 }
-.mainpicada{
-background-color: #14213d;
+
+.mainpicada {
+  background-color: #14213d;
 }
-.parrafo{ /*estilos al parrafo del titulo principal*/
-    font-family: 'Yantramanav', sans-serif;
-    font-size: 1.5rem ;
-    text-align: right; /*no pude centrar el parrafo como queria*/
-    color: white;
-    line-height: 2 ;
+
+.parrafo { /*estilos al parrafo del titulo principal*/
+  font-family: "Yantramanav", sans-serif;
+  font-size: 1.5rem;
+  text-align: 4right; /*no pude centrar el parrafo como queria*/
+  color: white;
+  line-height: 2;
 }
+
 /************************************************Aqui comienza pagina de nosotros*******************************************/
-.mainnosotros{
-    background-color: #14213d;
+.mainnosotros {
+  background-color: #14213d;
 }
-.parrafonosotro{
-    font-family: 'Yantramanav', sans-serif;
-    color: white;
-    font-size: 1.5rem;
+
+.parrafonosotro {
+  font-family: "Yantramanav", sans-serif;
+  color: white;
+  font-size: 1.5rem;
 }
-.titulosnosotros{
-    font-family:'Domine',sans-serif;
-    font-size: 75px;
-    text-align: center;
-    color: #fca311;
+
+.titulosnosotros {
+  font-family: "domine", sans-serif;
+  font-size: 75px;
+  text-align: center;
+  color: #fca311;
 }
-.divnosotros{
-    border-color: white;
+
+.divnosotros {
+  border-color: white;
 }
-.palabracolor{
-    color:#1561f0;
+
+.palabracolor {
+  color: #1561f0;
+}
+
+.footer { /*se estila el footer para todas las paginas*/
+  background-image: linear-gradient(to top, #040f27, #031634, #021b41, #031f4f, #07245d);
+}
+
+.wapp { /*icono de whastap  movible*/
+  font-size: 3rem;
+  color: #013cbb;
+  animation-name: movimiento;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+.wapp:hover {
+  color: #1561f0;
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
+}
+.ani2{
+  animation-delay: 0.5s;
+}
+.ani3{
+  animation-delay: 1s;
+}
+@keyframes movimiento {
+  0%{
+    transform: translatey(0);
+  }
+  50%{
+    transform: translateY(-40px);
     }
+  100%{
+    transform: translatey(0);
+  }
+  
+}
+@media (max-width: 767px) {
+  .footer { /*se estila el footer para todas las paginas*/
+    height: auto;
+  }
+  .footer .pfooter {
+    font-size: 1rem;
+  }
+  .footer .pfooter {
+    margin-right: 50px;
+  }
+  .footer a {
+    font-size: 16px;
+    padding: 20px;
+  }
+  .diviconos .iconos {
+    font-size: 2rem;
+  }
+  .wapp { /*icono de whastap  movible*/
+    font-size: 2rem;
+    bottom: 97px;
+    right: 35px;
+    animation:  none;
+  }
+}
+/*********************************Aqui comienza pag 404*******************************/
+.img404{
+  height: 500px;
+  border-radius: 50%;
+  margin-left: 100px;
+}
+.error{
+  font-size: 4rem;
+  color: white;
+  font-family: "domine", sans-serif;
+  margin-top: 150px;
+}
+.fondo{
+  background-color: #021b41;
+}
+@media (max-width: 767px) {
+  .img404{
+    height: 300px;
+    margin-left: auto;
+  }
+}
+

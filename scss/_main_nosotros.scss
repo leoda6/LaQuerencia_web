@@ -2,20 +2,28 @@
 .mainnosotros{
     background-color: #14213d;
 }
-.parrafonosotro{
-    font-family: 'Yantramanav', sans-serif;
-    color: white;
-    font-size: 1.5rem;
+/************************************************Aqui comienza pagina de nosotros*******************************************/
+.mainnosotros {
+  background-color: #14213d;
 }
-.titulosnosotros{
-    font-family:$font-titulo;
-    font-size: 75px;
-    text-align: center;
-    color: $color-titulo;
+
+.parrafonosotro {
+  font-family: "Yantramanav", sans-serif;
+  color: white;
+  font-size: 1.5rem;
 }
-.divnosotros{
-    border-color: white;
+
+.titulosnosotros {
+  font-family: $font-titulo;
+  font-size: 75px;
+  text-align: center;
+  color: $color-titulo;
 }
-.palabracolor{
-    color:$palabra-color;
-    }
+
+.divnosotros {
+  border-color: white;
+}
+
+.palabracolor {
+  color: #1561f0;
+}

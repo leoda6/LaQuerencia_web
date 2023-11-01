@@ -20,12 +20,14 @@
   position: sticky;
   top: 0;
 }
+
 .encabezado .linknav { /*se acomoda navegacion y se le da propiedades*/
   color: white;
   justify-content: space-between;
   font-family: "Alef", sans-serif;
   font-size: 1.5rem;
 }
+
 .encabezado .boton {
   background-color: #1561f0;
 }
@@ -55,6 +57,7 @@
   text-align: center;
   background-color: #14213d;
 }
+
 .div1 .imgfondo {
   display: flex;
   background-repeat: no-repeat;
@@ -63,17 +66,20 @@
   border-radius: 15px;
   background-position: left center;
 }
+
 .div1 .tituloprincipal { /*estilos al titulo*/
   font-family: "domine", sans-serif;
   font-size: 100px;
   text-align: center;
   color: #fca311;
 }
+
 .div1 .contenedorparrafo {
   text-align: center;
   justify-content: center;
   text-align: right;
 }
+
 .div1 .parrafo { /*estilos al parrafo del titulo principal*/
   font-family: "Yantramanav", sans-serif;
   font-size: 1.5rem;
@@ -85,6 +91,7 @@
   line-height: 2;
   overflow: auto;
 }
+
 .div1 .parrafo .destacado {
   color: #1561f0;
 }
@@ -99,6 +106,7 @@
   border-bottom: solid 2px #2b2b2b;
   padding: 50px; /* Agregamos un espacio interior al contenedor */
 }
+
 .container .fotos {
   height: 400px;
   width: 500px;
@@ -203,16 +211,6 @@
   margin-top: 50px;
 }
 
-/*******************************Aqui comienza pagina de contacto**********************************/
-.maincontacto {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-@media screen and (max-width: 767) {
-  .versionmobile {
-    display: none !important;
-  }
-}
 /******************************************Aqui comienza pagina de picadas********************************/
 .tituloprincipal { /*estilos al titulo*/
   font-family: "domine", sans-serif;
@@ -241,6 +239,11 @@
   text-align: 4right; /*no pude centrar el parrafo como queria*/
   color: white;
   line-height: 2;
+}
+
+/************************************************Aqui comienza pagina de nosotros*******************************************/
+.mainnosotros {
+  background-color: #14213d;
 }
 
 /************************************************Aqui comienza pagina de nosotros*******************************************/
